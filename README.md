@@ -75,105 +75,182 @@
     - Arrays [1,2,3; "Hello","World"]
     - Objects {"key": "value"} {"age": 24}
 
->JSON Web Token
+> JSON Web Token
 - asdf
 
-    Deploy a project
-    Microservices
-    Regular expressions
-    Minification
-    Ternary operator
-    Logical operators
-    Version control system
-        What is GIT?
-        What is GitHub?
-        What is GitLab?
-        GitFlow
-        Branching
-    POO Basics
-    Recursión
-Markdown
+   > Deploy a project
 
-Agile methodologies
-    What is KANBAN?
-    What is SCRUM??
+    > Microservices 
 
-Best practices
-    Design patterns
-    Testing (With Jest) and code quality
-    SOLID
-    Codeparing
-    Linter (With ESLint)
-    Documentation (With JSDoc and PlantUML)
-    When should you use GET, POST, DELETE, PUT, etc… methods?
-    When should you return an HTTP code 200, 201, 300, etc.. 
+    > Regular expressions
 
-Useful technologies
-    Contentful
-    Express
-    Koa
-    Redux
-    React
-    Vue.js
+    > Minification
 
-Databases
-    Relational DB
-    Non relational DB
-    SQL
-    MongoDB
-        CRUD operations
-    CouchDB
-    Redis
+    > Ternary operator
 
-Node JS / JS Theory
-    V8 engine
-    Event loop
-    Modules, require, import/export
-    Node eventemitter
-    Streams and buffers
-    JS Data types
-    Handling errors
-        Try catch
-        console.log
-        etc
-    Callback hell
-        Promises
-        Async await
-    HOF
-        Arrow function
-        map
-        reduce
-        Why use them
-        When use them
-        etc
-    POO
-        Garbage collector
-        Constructor/destructor
-        new operator
-        Object methods
-            this
-            keys
-            etc
-        Classes
-    Array methods
-        push
-        pop
-        etc
-    JSON Methods
-        stringify 
-        parse
-    SCOPE
-        var
-        let
-        const
-    Ecmascript
-    Prototype
-    Api
-        ApiGateway
-        Backends for frontends
-    Destructores
+    > Logical operators
 
-Bibliography
+   >  Version control system
+
+        > What is GIT?
+
+       > What is GitHub?
+
+       > What is GitLab?
+
+       > GitFlow
+
+    > Branching
+
+    > POO Basics
+
+    > Recursión
+> Markdown
+
+> Agile methodologies
+
+    > What is KANBAN?
+
+    > What is SCRUM??
+
+## Best practices
+
+
+> Design patterns
+
+> Testing (With Jest) and code quality
+
+   > SOLID
+
+   > Codeparing
+
+   > Linter (With ESLint)
+
+   > Documentation (With JSDoc and PlantUML)
+
+> When should you use GET, POST, DELETE, PUT, etc… methods?
+
+> When should you return an HTTP code 200, 201, 300, etc.. 
+
+## Useful technologies
+   >  Contentful
+
+   >  Express
+
+   >  Koa
+
+   >  Redux
+
+   >  React
+   
+   >  Vue.js
+
+## Databases
+   >  Relational DB
+
+   >  Non relational DB
+
+   >  SQL
+
+> MongoDB
+
+> CRUD operations
+
+  > CouchDB
+
+>  Redis
+
+## Node JS / JS Theory
+
+>     V8 engine
+
+>     Event loop
+
+>     Modules, require, import/export
+
+>     Node eventemitter
+
+>     Streams and buffers
+
+>     JS Data types
+
+### Handling errors
+
+> Try catch
+
+> console.log
+
+> etc
+
+### Callback hell
+
+> Promises
+
+> Async await
+
+### HOF
+> Arrow function
+
+> map
+
+### reduce
+
+> Why use them
+
+> When use them
+
+> etc
+
+### POO
+> Garbage collector
+
+> Constructor/destructor
+
+> new operator
+
+### Object methods
+> this
+
+> keys
+
+> etc
+
+### Classes
+> Array methods
+
+> push
+
+> pop
+
+> etc
+
+### JSON Methods
+> stringify 
+
+> parse
+
+### SCOPE
+> var
+
+> let
+
+> const
+
+> Ecmascript
+
+### Prototype
+> Api
+
+> ApiGateway
+
+> Backends for frontends
+
+> Destructors
+
+
+
+
+### Bibliography
     https://javascript.info/
     https://eloquentjavascript.net/
     https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/README.md
