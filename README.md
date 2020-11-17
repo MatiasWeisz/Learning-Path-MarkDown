@@ -76,35 +76,68 @@
     - Objects {"key": "value"} {"age": 24}
 
 > JSON Web Token
-- asdf
+- JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+- This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.
 
-   > Deploy a project
+## Deploy a project
+> The key to success for every enterprise project is a well-thought-out plan. One of the biggest mistakes that most teams make is having practices in place that lead to last-minute scrambling. 
 
-    > Microservices 
 
-    > Regular expressions
 
-    > Minification
+ - - -
 
-    > Ternary operator
 
-    > Logical operators
+### Microservices
+> A variant of the service-oriented architecture (SOA) structural style
+- Microservice architecture, arranges an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. 
 
-   >  Version control system
+### Regular expressions
+   - A regular expression is a sequence of characters that define a search pattern. Usually such patterns are used by string-searching algorithms for "find" or "find and replace" operations on strings, or for input validation.
 
-        > What is GIT?
+### Minification
+ - Minification is the process of removing all unnecessary characters from the source code of interpreted programming languages or markup languages without changing its functionality.
 
-       > What is GitHub?
+>    - In JavaScript:
+>        - var array = [];
+> for (var i = 0; i < 20; i++) {
+>  array[i] = i;
+>}
+>
+>>            this can be replace by:
+>        - for(var a=[i=0];i<20;a[i]=i++);
 
-       > What is GitLab?
+### Ternary operator
+- The ternary operator is an operator that exists in some programming languages, which takes three operands rather than the typical one or two that most operators use. It provides a way to shorten a simple if else block.
 
-       > GitFlow
+### Logical operators
+- The concept of logical operators is simple. They allow a program to make a decision based on multiple conditions. Each operand is considered a condition that can be evaluated to a true or false value.
 
-    > Branching
+# Version control system
+> What is a “version control System”?
+- Version control systems are a category of software tools that helps record changes to files by keeping a track of modifications done to the code.
 
-    > POO Basics
+> What is GIT?
+ - **Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-    > Recursión
+> What is GitHub?
+ - **GitHub** is a code hosting platform for version control and collaboration.
+ It lets you and others work together on projects from anywhere.
+
+> What is GitLab?
+- Similar to GitHub, GitLab is a repository manager which lets teams collaborate on code. Written in Ruby and Go, GitLab offers some similar features for issue tracking and project management as GitHub.
+   - One of the big differences between GitLab and GitHub is the built-in Continuous Integration/Delivery of GitLab.
+
+> GitFlow
+- **GitFlow** is a branching model for Git, created by Vincent Driessen. It has attracted a lot of attention because it is very well suited to collaboration and scaling the development team.
+
+> Branching
+- Branching, is the duplication of an object under version control (such as a source code file or a directory tree) so that modifications can occur in parallel along multiple branches.
+   - For an easy way to understand this a branch in Git is just a named reference to a commit, yep that's it.
+   
+> POO Basics
+
+> Recursión
+
 > Markdown
 
 > Agile methodologies
