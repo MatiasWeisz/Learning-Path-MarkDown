@@ -134,9 +134,11 @@
 - Branching, is the duplication of an object under version control (such as a source code file or a directory tree) so that modifications can occur in parallel along multiple branches.
    - For an easy way to understand this a branch in Git is just a named reference to a commit, yep that's it.
    
-> POO Basics
-
+## POO Basics
+ > Encapsulation
+ > Abstraction
 > Recursión
+- Recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem. Such problems can generally be solved by iteration, but this needs to identify and index the smaller instances at programming time. Recursion solves such recursive problems by using functions that call themselves from within their own code. The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science.
 
 > Markdown
 
@@ -154,12 +156,12 @@
 > Testing (With Jest) and code quality
 
    > SOLID
-
+   investigar
    > Codeparing
 
    > Linter (With ESLint)
 
-   > Documentation (With JSDoc and PlantUML)
+   > Documentation (With JSDoc and PlantUML)("documentar swagger")
 
 > When should you use GET, POST, DELETE, PUT, etc… methods?
 
@@ -192,14 +194,32 @@
   > CouchDB
 
 >  Redis
-
+ investigar
 ## Node JS / JS Theory
+          
+> V8 engine
 
->     V8 engine
+ - V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others.
 
->     Event loop
+> Event loop
+ - The event loop concept is very simple. There’s an endless loop, where the JavaScript engine waits for tasks, executes them and then sleeps, waiting for more tasks.
 
->     Modules, require, import/export
+   - The general algorithm of the engine:
+
+      1) While there are tasks: execute them, starting with the oldest task.<br>
+
+      2) Sleep until a task appears, then go to 1.
+
+- That’s a formalization for what we see when browsing a page. The JavaScript engine does nothing most of the time, it only runs if a script/handler/event activates.
+
+### Modules, require, import/export
+>     As our application grows bigger, we want to split it into multiple files, so called “modules”. A module may contain a class or a library of functions for a specific purpose. For a long time, JavaScript existed without a language-level module syntax. That wasn’t a problem, because initially scripts were small and simple, so there was no need. But eventually scripts became more and more complex, so the community invented a variety of ways to organize code into modules, special libraries to load modules on demand
+- What is a module?
+   - A module is just a file. One script is one module. As simple as that.
+- Modules can load each other and use special directives export and import to interchange functionality, call functions of one module from another one:
+   - **export** keyword labels variables and functions that should be accessible from outside the current module.
+   - **import** allows the import of functionality from other modules.
+   
 
 >     Node eventemitter
 
@@ -280,6 +300,7 @@
 
 > Destructors
 
+>
 
 
 
