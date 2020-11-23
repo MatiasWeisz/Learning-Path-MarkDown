@@ -98,13 +98,13 @@
  - Minification is the process of removing all unnecessary characters from the source code of interpreted programming languages or markup languages without changing its functionality.
 
 >    - In JavaScript:
->        - var array = [];
+>        - <code>var array = [];
 > for (var i = 0; i < 20; i++) {
 >  array[i] = i;
->}
+>}</code>
 >
 >>            this can be replace by:
->        - for(var a=[i=0];i<20;a[i]=i++);
+><code>         for(var a=[i=0];i<20;a[i]=i++);</code>
 
 ### Ternary operator
 - The ternary operator is an operator that exists in some programming languages, which takes three operands rather than the typical one or two that most operators use. It provides a way to shorten a simple if else block.
@@ -219,27 +219,116 @@
 - Modules can load each other and use special directives export and import to interchange functionality, call functions of one module from another one:
    - **export** keyword labels variables and functions that should be accessible from outside the current module.
    - **import** allows the import of functionality from other modules.
+### Node eventemitter
+
+   >An event is basically a signal to call that something has happend. - For example:
+
+   - In node we have a class thats called HTTP, that we can use to build a web server, so we listen in a given port, and every time we recive a request in that port, that HTTP class, rises an event. Now our job is to respond to that event, wich basically involves reading that request and returning the right response 
+
+ ### Streams and buffers
+- Buffers:
+   - Temporary storage spot for a chunk of data that is being transferred from a place to another
+   - The buffer is filled with data, then passed along
+   - Transfer small chunks of data at a time.
+- Streams
+   - The small chunks of data that are pass from the buffer are called Streams, when the chunk of data if full on the buffer.
+
+      >In order to summarize this we are gona suppose that we have a lot of information to pass or "data" to point A to point B. So to pass all this data we "cut" this data in smaller chunks and get them one by one into the buffer, wich is a temporary storage. When the buffer is full of data, we are ready to pass this data in "streams" of data to the point B.
+
+
+### JS Data types
+   > There are 8 types of Data in JS:
+
+   - Primitive Types:
+
+      - Number: represents both integer and floating point numbers.
+
+
+      - BigInt: represent integer values larger than 9007199254740991, or less than -9007199254740991 for negatives.
+
+      - String: represent basically a string of characters
+
+      - Boolean (logical type): represent two values : true or false. This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.
+
+      - The “null” value: The special null value does not belong to any of the types described above. It’s just a special value which represents “nothing”, “empty” or “value unknown”.
+
+      - Undefined: The special value undefined also stands apart. It makes a type of its own, just like null. The meaning of undefined is “value is not assigned”.
+
+      - Symbol: it’s a very peculiar data type. Once you create a symbol, its value is kept private and for internal use. All that remains after the creation is the symbol reference. Symbols are often used to identify object properties. Often to avoid name clashing between properties, since no symbol is equal to another. Or to add properties that the user cannot overwrite, intentionally or without realizing.
    
+   - Reference Types:
+      - Objects: In computer science, an object can be a variable, a data structure, a function, or a method, and as such, is a value in memory referenced by an identifier. To make this clear lets say we have a car. A car has properties like weight and color, and methods like start and stop. All cars have the same properties, but the property values differ from car to car. All cars have the same methods, but the methods are performed at different times.
+      
+###  Error handling
+> Errors can be coding errors made by the programer, errors do the wrong input or other unenforceable things.
 
->     Node eventemitter
+- **Error Handling** is used most with wrking with data from other sources or user input since sice those can be unreliable
 
->     Streams and buffers
+   ### Try catch
+ - the try{} statement lets you test a block of code for errors, and the catch {} statment lets you handle the error. Here is an example:
+   ><code> try {<br>
+      console.log("Start of try runs");<br>
+      unicycle;<br>
+      console.log("End of the try runs -- Never reached");<br>
+   }<br> 
+   catch(err) {<br>
+      console.log("Error has occured "+err.stack);<br>
+   }</code>
 
->     JS Data types
+   ### console.log
 
-### Handling errors
-
-> Try catch
-
-> console.log
-
-> etc
+ - The console.log() method writes a message to the console. The console is useful for testing purposes. Example:
+ <code>
+      - var myObj = { firstname : "John", lastname : "Doe" };<br>
+         console.log(myObj);<br>
+ </code>     
+         >  This allow us to write an object to the console
+   
+   ### etc
 
 ### Callback hell
 
-> Promises
+>#### Promises
+ - The idea of a promise is just like in real life, so you comit to do something, like for example: I promise that I can learn JavaScript on a day.
+ - So this promise has two outcomes:
+  1) You completed or resolved;
+  2) You failed or is rejected.
 
-> Async await
+
+>#### Async await
+- #### Async:
+   -  The word “async” before a function means one simple thing: a function always returns a promise. Other values are wrapped in a resolved promise automatically. For instance, this function returns a resolved promise with the result of 1:<br>
+<code>
+async function f() {<br>
+  return Promise.resolve(1);<br>
+}<br>
+
+      f().then(alert); // 1<br>
+</code>
+
+- #### Await:
+
+   - So, async ensures that the function returns a promise, and wraps non-promises in it. Simple enough, right? But not only that. There’s another keyword, await, that works only inside async functions, and it’s pretty cool.
+   - The keyword await makes JavaScript wait until that promise settles and returns its result.
+
+   Here’s an example with a promise that resolves in 1 second:
+<code>
+<br>
+async function f() {<br>
+<br>
+  let promise = new Promise((resolve, reject) => {<br>
+    setTimeout(() => resolve("done!"), 1000)<br>
+  });<br>
+<br>
+  let result = await promise; // wait until the promise resolves (*)<br>
+<br>
+  alert(result); // "done!"<br>
+}<br>
+<br>
+f();<br>
+</code>
+
+   > The function execution “pauses” at the line (*) and resumes when the promise settles, with result becoming its result. So the code above shows “done!” in one second.
 
 ### HOF
 > Arrow function
