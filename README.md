@@ -98,14 +98,16 @@
  - Minification is the process of removing all unnecessary characters from the source code of interpreted programming languages or markup languages without changing its functionality.
 
 >    - In JavaScript:
->        - <code>var array = [];
-> for (var i = 0; i < 20; i++) {
->  array[i] = i;
->}</code>
->
->>            this can be replace by:
-><code>         for(var a=[i=0];i<20;a[i]=i++);</code>
-
+```
+var array = [];
+for (var i = 0; i < 20; i++) {
+array[i] = i;
+}
+```
+>this can be replace by:
+```
+for(var a=[i=0];i<20;a[i]=i++);
+```
 ### Ternary operator
 - The ternary operator is an operator that exists in some programming languages, which takes three operands rather than the typical one or two that most operators use. It provides a way to shorten a simple if else block.
 
@@ -266,23 +268,24 @@
 
    ### Try catch
  - the try{} statement lets you test a block of code for errors, and the catch {} statment lets you handle the error. Here is an example:
-   ><code> try {<br>
-      console.log("Start of try runs");<br>
-      unicycle;<br>
-      console.log("End of the try runs -- Never reached");<br>
-   }<br> 
-   catch(err) {<br>
-      console.log("Error has occured "+err.stack);<br>
-   }</code>
+   ``` try {
+      console.log("Start of try runs");
+      unicycle;
+      console.log("End of the try runs -- Never reached");
+   }
+   catch(err) {
+      console.log("Error has occured "+err.stack);
+   }
+   ```
 
    ### console.log
 
  - The console.log() method writes a message to the console. The console is useful for testing purposes. Example:
- <code>
-      - var myObj = { firstname : "John", lastname : "Doe" };<br>
-         console.log(myObj);<br>
- </code>     
-         >  This allow us to write an object to the console
+ ```
+      var myObj = { firstname : "John", lastname : "Doe" };
+      console.log(myObj);
+ ```    
+      > This allow us to write an object to the console
    
    ### etc
 
@@ -298,13 +301,16 @@
 >#### Async await
 - #### Async:
    -  The word “async” before a function means one simple thing: a function always returns a promise. Other values are wrapped in a resolved promise automatically. For instance, this function returns a resolved promise with the result of 1:<br>
-<code>
-async function f() {<br>
-  return Promise.resolve(1);<br>
-}<br>
 
-      f().then(alert); // 1<br>
-</code>
+```
+async function f() {
+
+  return Promise.resolve(1);
+
+   }
+
+      f().then(alert); // 1
+```
 
 - #### Await:
 
@@ -312,21 +318,21 @@ async function f() {<br>
    - The keyword await makes JavaScript wait until that promise settles and returns its result.
 
    Here’s an example with a promise that resolves in 1 second:
-<code>
-<br>
-async function f() {<br>
-<br>
-  let promise = new Promise((resolve, reject) => {<br>
-    setTimeout(() => resolve("done!"), 1000)<br>
-  });<br>
-<br>
-  let result = await promise; // wait until the promise resolves (*)<br>
-<br>
-  alert(result); // "done!"<br>
-}<br>
-<br>
-f();<br>
-</code>
+```
+
+async function f() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+
+  let result = await promise; // wait until the promise resolves (*)
+
+  alert(result); // "done!"
+}
+
+f();
+```
 
    > The function execution “pauses” at the line (*) and resumes when the promise settles, with result becoming its result. So the code above shows “done!” in one second.
 
