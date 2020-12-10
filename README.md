@@ -339,6 +339,20 @@ f();
 ### HOF
 > Arrow function
 
+   Arrow functions where introduced in ES6. This type of functions allow us to write shorter function syntax:
+
+   - Before:
+   ```
+   hello = function() {
+  return "Hello World!";
+   }
+   ```
+   - After: 
+   ```
+   hello = () => {
+  return "Hello World!";
+   }
+   ```
 > map
 
 ### reduce
